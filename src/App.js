@@ -1,8 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import fetchData from './fetchData';
+import { useEffect, useState } from 'react';
 
-function App() {
+const App =()=> {
+  // const [loading, setLoading] = useState(true);
+  // const [data, updateData]=useState({});
+
+  // useEffect(()=>{
+  //   (async function() {
+  //     const serverData = await fetchData("http://localhost:3015/?widgetId=1605475769949310080");
+  //     updateData(serverData);
+  //     setLoading(false);
+  //   })();
+
+  // },[]);
+  // if (loading) {
+  //   return <></>;
+  // }
+  // console.log("serverData: ", data);
   return (
+    <>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -15,10 +33,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn Reac
         </a>
+      {/* {data} */}
       </header>
-    </div>
+     </div>
+    </>
   );
 }
 
